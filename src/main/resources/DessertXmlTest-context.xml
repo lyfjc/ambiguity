@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="XiaoMing" >
+        <!--<property name="dessert" ref="iceCream"/>-->
+        <!--如果指定ref了，则无视下面的primary属性-->
+    </bean>
+    <bean id="cake" class="Cake"/>
+    <bean id="cookies" class="Cookies"  primary="true"/>
+    <bean id="iceCream" class="IceCream"/>
+</beans>
